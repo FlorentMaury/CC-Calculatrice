@@ -61,8 +61,12 @@ calculate.addEventListener('mouseover', () => {
     infos.textContent = 'Calculez le total.';
 });
 
+toggleCalculator.addEventListener('mouseover', () => {
+    infos.textContent = 'Faites un tour de magie avec votre souris.';
+});
+
 // Réaffiche le texte par défaut lorsque la souris n'est plus sur aucun élément.
-[number1, operator, number2, calculate].forEach(element => {
+[number1, operator, number2, calculate, toggleCalculator].forEach(element => {
     element.addEventListener('mouseout', () => {
         infos.textContent = 'Pour plus d\'infos, ou des questions, passez la souris au-dessus des éléments.';
     });
